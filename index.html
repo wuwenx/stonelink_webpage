@@ -66,7 +66,7 @@
       }
 
       .logo img {
-        height: 40px;
+        height: 50px;
         margin-right: 10px;
       }
 
@@ -651,6 +651,8 @@
 
       .footer-logo {
         margin-bottom: 30px;
+        display: flex;
+        justify-content: start;
       }
 
       .footer-logo img {
@@ -660,6 +662,51 @@
       .footer-text {
         color: var(--text-gray);
         margin-bottom: 20px;
+      }
+
+      .footer-contact {
+        margin-bottom: 30px;
+      }
+
+      .footer-contact h3 {
+        color: var(--text-white);
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 10px auto;
+        max-width: 250px;
+        text-align: left;
+      }
+
+      .contact-list li {
+        color: var(--text-light);
+        font-size: 17px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        word-break: break-all;
+      }
+
+      .contact-icon {
+        margin-right: 10px;
+        font-size: 20px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .contact-list a {
+        color: var(--primary-light-blue);
+        text-decoration: none;
+        word-break: break-all;
+      }
+
+      .contact-list a:hover {
+        text-decoration: underline;
       }
 
       .footer-links {
@@ -685,6 +732,7 @@
       }
 
       .copyright {
+        text-align: left;
         color: var(--text-gray);
         font-size: 14px;
       }
@@ -789,6 +837,19 @@
 
         .advantage-number {
           font-size: 36px;
+        }
+
+        .footer-contact h3 {
+          font-size: 18px;
+        }
+
+        .contact-list {
+          font-size: 15px;
+          max-width: 100%;
+        }
+
+        .contact-list li {
+          font-size: 15px;
         }
       }
     </style>
@@ -1070,14 +1131,26 @@
         <div class="footer-logo">
           <img src="images/stonelink_logo.png" alt="STONELINK Logo" />
         </div>
-        <p class="footer-text">Stonelink - Empowering Asset Management</p>
-        <ul class="footer-links">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#industry">OVERVIEW</a></li>
-          <li><a href="#services">SERVICE</a></li>
-          <li><a href="#products">PRODUCTS</a></li>
-          <li><a href="#system">ADVANTAGES</a></li>
-        </ul>
+        <!-- <p class="footer-text">Stonelink - Empowering Asset Management</p> -->
+        <div class="footer-contact">
+          <ul class="contact-list">
+            <li>
+              <h3>Contact Us</h3>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:mm@stonelink.ai" target="_blank"
+                >mm@stonelink.ai</a
+              >
+            </li>
+            <li>
+              <span class="contact-icon">🐦</span>
+              <a href="https://x.com/stonelink_ai" target="_blank"
+                >https://x.com/stonelink_ai</a
+              >
+            </li>
+          </ul>
+        </div>
         <p class="copyright">© 2025 STONELINK. All rights reserved.</p>
       </div>
     </footer>
