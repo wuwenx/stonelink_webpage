@@ -120,6 +120,8 @@
         border: none;
         color: var(--text-light);
         font-size: 24px;
+        position: relative;
+        z-index: 1000;
       }
 
       /* 英雄区域样式 */
@@ -727,7 +729,7 @@
 
         .nav-links {
           position: fixed;
-          top: 70px;
+          top: 60px;
           left: 0;
           width: 100%;
           background-color: rgba(10, 25, 47, 0.95);
@@ -802,9 +804,9 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">HOME</a></li>
           <li><a href="#industry">OVERVIEW</a></li>
-          <li><a href="#services">SERVICE</a></li>
+          <!-- <li><a href="#services">SERVICE</a></li> -->
           <li><a href="#products">PRODUCTS</a></li>
-          <li><a href="#system">ADVANTAGES</a></li>
+          <!-- <li><a href="#system">ADVANTAGES</a></li> -->
           <li><a href="#cooperation">COOPERATION</a></li>
           <li><a href="#value">PROPOSITION</a></li>
           <li><a href="#customers">COOPERATIVE</a></li>
@@ -1098,6 +1100,7 @@
       const navLinks = document.getElementById("navLinks");
 
       mobileMenuBtn.addEventListener("click", function () {
+        console.log("click");
         navLinks.classList.toggle("active");
         mobileMenuBtn.textContent = navLinks.classList.contains("active")
           ? "✕"
