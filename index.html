@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STONELINK - Empowering Asset Management</title>
+    <link rel="icon" href="favicon.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -662,6 +663,8 @@
 
       .footer-contact {
         margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
       }
 
       .footer-contact h3 {
@@ -674,7 +677,7 @@
       .contact-list {
         list-style: none;
         padding: 0;
-        margin: 0 auto 10px auto;
+        /* margin: 0 auto 10px auto; */
         max-width: 250px;
         text-align: left;
       }
@@ -1124,23 +1127,35 @@
     <!-- 页脚 -->
     <footer>
       <div class="container">
-        <div class="footer-logo">
+        <!-- <div class="footer-logo">
           <img src="images/stonelink_logo.png" alt="STONELINK Logo" />
-        </div>
+        </div> -->
         <!-- <p class="footer-text">Stonelink - Empowering Asset Management</p> -->
         <div class="footer-contact">
+          <div class="footer-logo">
+            <img src="images/stonelink_logo.png" alt="STONELINK Logo" />
+          </div>
           <ul class="contact-list">
             <li>
               <h3>Contact Us</h3>
             </li>
             <li>
-              <span class="contact-icon">✉️</span>
+              <span class="contact-icon">
+                <img
+                  src="images/email.png"
+                  alt="Email"
+                  width="20"
+                  height="20"
+                />
+              </span>
               <a href="mailto:mm@stonelink.ai" target="_blank"
                 >mm@stonelink.ai</a
               >
             </li>
             <li>
-              <span class="contact-icon">🐦</span>
+              <span class="contact-icon">
+                <img src="images/x.svg" alt="X" width="20" height="20" />
+              </span>
               <a href="https://x.com/stonelink_ai" target="_blank"
                 >https://x.com/stonelink_ai</a
               >
