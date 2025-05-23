@@ -160,21 +160,28 @@
         font-size: 72px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: var(--text-white);
+        color: var(--primary-blue);
         text-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
       }
 
       .hero-subtitle {
-        font-size: 24px;
+        width: fit-content;
+        width: 700px;
+        font-size: 22px;
         font-weight: 500;
         margin-bottom: 30px;
-        color: var(--primary-blue);
+        margin-left: -100px;
+        color: var(--text-white);
         position: relative;
         display: inline-block;
         padding: 10px 30px;
+        background: url("images/management.png") no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 4px;
+        text-align: center;
       }
 
-      .hero-subtitle::before,
+      /* .hero-subtitle::before,
       .hero-subtitle::after {
         content: "";
         position: absolute;
@@ -191,6 +198,18 @@
       .hero-subtitle::after {
         width: 20px;
         right: 0;
+      } */
+      .hero-subtitle-dsc {
+        max-width: 600px;
+        color: var(--primary-light-blue);
+      }
+
+      .dsc-1 {
+        margin-bottom: 20px;
+      }
+      .dsc-1,
+      .dsc-2 {
+        font-size: 18px;
       }
 
       /* 章节标题样式 */
@@ -628,9 +647,11 @@
         margin-bottom: 15px;
       }
 
-      .customer-logo span {
-        font-size: 36px;
-        color: var(--primary-blue);
+      .customer-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
       }
 
       .customer-name {
@@ -647,7 +668,6 @@
       }
 
       .footer-logo {
-        margin-bottom: 30px;
         display: flex;
         justify-content: start;
       }
@@ -662,7 +682,6 @@
       }
 
       .footer-contact {
-        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
       }
@@ -699,7 +718,7 @@
       }
 
       .contact-list a {
-        color: var(--primary-light-blue);
+        color: var(--text-white);
         text-decoration: none;
         word-break: break-all;
       }
@@ -740,10 +759,15 @@
       @media screen and (max-width: 992px) {
         .hero-title {
           font-size: 56px;
+          width: 500px;
         }
 
         .hero-subtitle {
           font-size: 20px;
+        }
+        .dsc-1,
+        .dsc-2 {
+          font-size: 18px;
         }
 
         .section-title {
@@ -807,7 +831,7 @@
         }
 
         .hero-subtitle {
-          font-size: 18px;
+          font-size: 16px;
         }
 
         .section-title {
@@ -828,6 +852,10 @@
 
         .hero-subtitle {
           font-size: 16px;
+        }
+        .dsc-1,
+        .dsc-2 {
+          font-size: 14px;
         }
 
         .section-title {
@@ -880,6 +908,15 @@
       <div class="container hero-content">
         <h1 class="hero-title">STONELINK</h1>
         <h2 class="hero-subtitle">Empowering Asset Management</h2>
+        <p class="hero-subtitle-dsc dsc-1">
+          BREAK THROUGH THE BOUNDARIES WITH TECHNOLOGY AND AVOID RISKS WITH
+          EXPERIENCE
+        </p>
+        <p class="hero-subtitle-dsc dsc-2" style="color: var(--text-white)">
+          Provide a full-process solution for digital asset exchanges from
+          strategy design to implementation, so that each digital asset can
+          unleash unlimited potential
+        </p>
       </div>
     </section>
 
@@ -1098,25 +1135,28 @@
         <div class="customers-grid">
           <div class="customer-card">
             <div class="customer-logo">
-              <span>A</span>
+              <img src="images/segment_1.png" alt="Institutional Investors" />
             </div>
             <p class="customer-name">Institutional Investors</p>
           </div>
           <div class="customer-card">
             <div class="customer-logo">
-              <span>B</span>
+              <img src="images/segment_2.png" alt="Family Offices" />
             </div>
             <p class="customer-name">Family Offices</p>
           </div>
           <div class="customer-card">
             <div class="customer-logo">
-              <span>C</span>
+              <img
+                src="images/segment_3.png"
+                alt="High Net Worth Individuals"
+              />
             </div>
             <p class="customer-name">High Net Worth Individuals</p>
           </div>
           <div class="customer-card">
             <div class="customer-logo">
-              <span>D</span>
+              <img src="images/segment_4.png" alt="Digital Asset Exchanges" />
             </div>
             <p class="customer-name">Digital Asset Exchanges</p>
           </div>
@@ -1132,8 +1172,17 @@
         </div> -->
         <!-- <p class="footer-text">Stonelink - Empowering Asset Management</p> -->
         <div class="footer-contact">
-          <div class="footer-logo">
+          <div
+            class="footer-logo"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: space-between;
+            "
+          >
             <img src="images/stonelink_logo.png" alt="STONELINK Logo" />
+            <p class="copyright">© 2025 STONELINK. All rights reserved.</p>
           </div>
           <ul class="contact-list">
             <li>
@@ -1162,7 +1211,6 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">© 2025 STONELINK. All rights reserved.</p>
       </div>
     </footer>
 
